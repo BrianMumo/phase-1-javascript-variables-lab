@@ -2,18 +2,18 @@
   "stats": {
     "suites": 4,
     "tests": 6,
-    "passes": 6,
+    "passes": 5,
     "pending": 0,
-    "failures": 0,
-    "start": "2024-09-24T01:51:53.406Z",
-    "end": "2024-09-24T01:51:53.966Z",
-    "duration": 560
+    "failures": 1,
+    "start": "2024-09-24T01:55:59.281Z",
+    "end": "2024-09-24T01:55:59.857Z",
+    "duration": 576
   },
   "tests": [
     {
       "title": "is set as Scuber",
       "fullTitle": "index.js companyName is set as Scuber",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -27,14 +27,20 @@
     {
       "title": "is declared as equal to Chelsea",
       "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
-      "duration": 0,
+      "duration": 2,
       "currentRetry": 0,
-      "err": {}
+      "err": {
+        "message": "expected 'Chelse' to equal 'Chelsea'",
+        "showDiff": true,
+        "actual": "Chelse",
+        "expected": "Chelsea",
+        "stack": "AssertionError: expected 'Chelse' to equal 'Chelsea'\n    at Context.<anonymous> (test/indexTest.js:19:45)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
     },
     {
       "title": "is defined using let",
       "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -54,12 +60,26 @@
     }
   ],
   "pending": [],
-  "failures": [],
+  "failures": [
+    {
+      "title": "is declared as equal to Chelsea",
+      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'Chelse' to equal 'Chelsea'",
+        "showDiff": true,
+        "actual": "Chelse",
+        "expected": "Chelsea",
+        "stack": "AssertionError: expected 'Chelse' to equal 'Chelsea'\n    at Context.<anonymous> (test/indexTest.js:19:45)\n    at process.processImmediate (node:internal/timers:476:21)"
+      }
+    }
+  ],
   "passes": [
     {
       "title": "is set as Scuber",
       "fullTitle": "index.js companyName is set as Scuber",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -71,16 +91,9 @@
       "err": {}
     },
     {
-      "title": "is declared as equal to Chelsea",
-      "fullTitle": "index.js mostProfitableNeighborhood is declared as equal to Chelsea",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
       "title": "is defined using let",
       "fullTitle": "index.js mostProfitableNeighborhood is defined using let",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
